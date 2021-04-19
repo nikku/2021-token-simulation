@@ -362,7 +362,8 @@ transform: translate(0, 0);
       <section class="slide" data-theme="cccon" data-align="left"><!--config
 theme=cccon
 --><style>
-  .slide:not([data-theme]):before {
+  .slide:not([data-theme]):before,
+  .slide[data-theme='cccon-end']:before {
     content: '';
     position: absolute;
     left: 0;
@@ -378,6 +379,7 @@ theme=cccon
     --slide-margin: 4rem;
     --block-margin: calc(var(--slide-margin) * .25);
     background: url('./community-summit-bg.png');
+    justify-content: start;
     color: white;
   }
 
@@ -389,7 +391,7 @@ theme=cccon
   .slide[data-theme='eco'] {
     --color-highlight-bg: #ff3000;
   }
-</style><img src="./community-summit-logo-white.svg" style="height: 4em; margin-top: -2em; display: block;" />
+</style><img src="./community-summit-logo-white.svg" style="height: 4em; display: block;" />
         <h2>Making of bpmn-js Token Simulation</h2>
         <h5>Understanding bpmn-js extensibility one token at a time.</h5>
         <p><small style="font-size: .5em">Nico Rehwaldt</small></p>
@@ -580,31 +582,25 @@ theme=eco
       <section class="slide" data-theme="cccon-end" data-align="left"><!--config
 theme=cccon-end
 --><style>
-  .slide[data-theme=cccon-end] {
+  .slide[data-theme='cccon-end'] {
     --slide-margin: 4rem;
     --block-margin: calc(var(--slide-margin) * .25);
+    justify-content: start;
   }
 
   .slide[data-theme='cccon-end'] h2 {
-    margin-top: 2em;
+    margin-top: var(--block-margin);
   }
-</style><img src="./community-summit-logo-black.svg" style="height: 4em; margin-top: -5em; display: block; float: left;" />
-        <h2>Thank you.</h2>
-      </section>
-      <section class="slide" data-align="center"><!--config
-align=center
--->
-        <h1>❓</h1>
+</style><img src="./community-summit-logo-black.svg" style="height: 4em; display: block; margin-bottom: calc(var(--block-margin) * 8)" />
+        <h2>Thank you. Questions?</h2>
       </section>
       <section class="slide" data-align="left">
         <h2>Resources</h2>
         <ul>
-          <li>
-            <p><a href="https://github.com/bpmn-io/bpmn-js-token-simulation" target="_blank" rel="nofollow noopener noreferrer">https://github.com/bpmn-io/bpmn-js-token-simulation</a></p>
-          </li>
-          <li>
-            <p><a href="https://forum.bpmn.io" target="_blank" rel="nofollow noopener noreferrer">https://forum.bpmn.io</a></p>
-          </li>
+          <li><a href="https://github.com/bpmn-io/bpmn-js" target="_blank" rel="nofollow noopener noreferrer">https://github.com/bpmn-io/bpmn-js</a></li>
+          <li><a href="https://github.com/bpmn-io/bpmn-js-examples" target="_blank" rel="nofollow noopener noreferrer">https://github.com/bpmn-io/bpmn-js-examples</a></li>
+          <li><a href="https://github.com/bpmn-io/bpmn-js-token-simulation" target="_blank" rel="nofollow noopener noreferrer">https://github.com/bpmn-io/bpmn-js-token-simulation</a></li>
+          <li><a href="https://forum.bpmn.io" target="_blank" rel="nofollow noopener noreferrer">https://forum.bpmn.io</a></li>
         </ul>
       </section>
     </div>

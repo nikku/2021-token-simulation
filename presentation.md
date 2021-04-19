@@ -16,7 +16,8 @@ theme=cccon
 -->
 
 <style>
-  .slide:not([data-theme]):before {
+  .slide:not([data-theme]):before,
+  .slide[data-theme='cccon-end']:before {
     content: '';
     position: absolute;
     left: 0;
@@ -32,6 +33,7 @@ theme=cccon
     --slide-margin: 4rem;
     --block-margin: calc(var(--slide-margin) * .25);
     background: url('./community-summit-bg.png');
+    justify-content: start;
     color: white;
   }
 
@@ -46,7 +48,7 @@ theme=cccon
 </style>
 
 
-<img src="./community-summit-logo-white.svg" style="height: 4em; margin-top: -2em; display: block;" />
+<img src="./community-summit-logo-white.svg" style="height: 4em; display: block;" />
 
 ## Making of bpmn-js Token Simulation
 
@@ -287,32 +289,26 @@ theme=cccon-end
 -->
 
 <style>
-  .slide[data-theme=cccon-end] {
+  .slide[data-theme='cccon-end'] {
     --slide-margin: 4rem;
     --block-margin: calc(var(--slide-margin) * .25);
+    justify-content: start;
   }
 
   .slide[data-theme='cccon-end'] h2 {
-    margin-top: 2em;
+    margin-top: var(--block-margin);
   }
 </style>
 
-<img src="./community-summit-logo-black.svg" style="height: 4em; margin-top: -5em; display: block; float: left;" />
+<img src="./community-summit-logo-black.svg" style="height: 4em; display: block; margin-bottom: calc(var(--block-margin) * 8)" />
 
-## Thank you.
-
----
-
-<!--config
-align=center
--->
-
-# :question:
+## Thank you. Questions?
 
 ---
 
 ## Resources
 
+* https://github.com/bpmn-io/bpmn-js
+* https://github.com/bpmn-io/bpmn-js-examples
 * https://github.com/bpmn-io/bpmn-js-token-simulation
-
 * https://forum.bpmn.io
