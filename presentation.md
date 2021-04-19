@@ -283,10 +283,21 @@ theme=eco
 ---
 
 <!--config
-align=left
+theme=cccon-end
 -->
 
-<img src="./community-summit-logo-black.svg" style="height: 4em; margin-top: -2em; display: block; float: left;" />
+<style>
+  .slide[data-theme=cccon-end] {
+    --slide-margin: 4rem;
+    --block-margin: calc(var(--slide-margin) * .25);
+  }
+
+  .slide[data-theme='cccon-end'] h2 {
+    margin-top: 2em;
+  }
+</style>
+
+<img src="./community-summit-logo-black.svg" style="height: 4em; margin-top: -5em; display: block; float: left;" />
 
 ## Thank you.
 

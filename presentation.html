@@ -577,9 +577,18 @@ theme=eco
           <li>A (single instance) process engine</li>
         </ul>
       </section>
-      <section class="slide" data-align="left"><!--config
-align=left
---><img src="./community-summit-logo-black.svg" style="height: 4em; margin-top: -2em; display: block; float: left;" />
+      <section class="slide" data-theme="cccon-end" data-align="left"><!--config
+theme=cccon-end
+--><style>
+  .slide[data-theme=cccon-end] {
+    --slide-margin: 4rem;
+    --block-margin: calc(var(--slide-margin) * .25);
+  }
+
+  .slide[data-theme='cccon-end'] h2 {
+    margin-top: 2em;
+  }
+</style><img src="./community-summit-logo-black.svg" style="height: 4em; margin-top: -5em; display: block; float: left;" />
         <h2>Thank you.</h2>
       </section>
       <section class="slide" data-align="center"><!--config
