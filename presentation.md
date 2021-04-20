@@ -236,8 +236,8 @@ modeling.createShape(
 
 ---
 
-<a style="height: 70%; display: block;" href="https://bpmn.io/blog/posts/2021-wasdenn-ai-modeling-assistant.html">
-  <img src="./002_wasdenn-2.gif" alt="002_wasdenn-2.gif" style="height: 100%;
+<a style="max-width: 70%; max-height: 70%; display: block;" href="https://bpmn.io/blog/posts/2021-wasdenn-ai-modeling-assistant.html">
+  <img src="./002_wasdenn-2.gif" alt="002_wasdenn-2.gif" style="width: 100%;
     border: solid 4px #F0F0F0;
     border-radius: 4px;">
 </a>
