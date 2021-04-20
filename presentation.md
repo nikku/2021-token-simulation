@@ -16,6 +16,11 @@ theme=cccon
 -->
 
 <style>
+
+  :root {
+    --color-camunda-red: #ff3000;
+  }
+
   .slide:not([data-theme]):before,
   .slide[data-theme='cccon-end']:before {
     content: '';
@@ -23,8 +28,14 @@ theme=cccon
     left: 0;
     top: 0;
     right: 0;
-    background: #ff3000;
+    background: var(--color-camunda-red);
     height: .2em;
+  }
+
+  ref {
+    display: block;
+    font-size: .5em;
+    margin-top: 2em;
   }
 
   .slide[data-theme='cccon'] {
@@ -43,7 +54,7 @@ theme=cccon
   }
 
   .slide[data-theme='eco'] {
-    --color-highlight-bg: #ff3000;
+    --color-highlight-bg: var(--color-camunda-red);
   }
 </style>
 
@@ -131,7 +142,7 @@ theme=eco
 * Embeds into any web page
 * Extensible by design
 
-<small style="margin-top: 2em; display: block">:arrow_right: [`https://github.com/bpmn-io/bpmn-js`](https://github.com/bpmn-io/bpmn-js)</small>
+<ref>[`https://github.com/bpmn-io/bpmn-js`](https://github.com/bpmn-io/bpmn-js)</ref>
 
 ---
 
@@ -198,6 +209,20 @@ selection.select([
 
 ---
 
+## :orange_book: Hook into Events
+
+```javascript
+const bpmnModeler = new BpmnModeler();
+
+const eventBus = bpmnModeler.get('eventBus');
+
+eventBus.on('element.changed', function(event) {
+  console.log('Changed', event.element);
+});
+```
+
+---
+
 ## :orange_book: Model Programmatically
 
 ```javascript
@@ -208,6 +233,16 @@ modeling.createShape(
   { x: 10, y: 20 }
 );
 ```
+
+---
+
+<a style="height: 70%; display: block;" href="https://bpmn.io/blog/posts/2021-wasdenn-ai-modeling-assistant.html">
+  <img src="./002_wasdenn-2.gif" alt="002_wasdenn-2.gif" style="height: 100%;
+    border: solid 4px #F0F0F0;
+    border-radius: 4px;">
+</a>
+
+<ref>[`https://bpmn.io/blog/posts/2021-wasdenn-ai-modeling-assistant.html`](https://bpmn.io/blog/posts/2021-wasdenn-ai-modeling-assistant.html)</ref>
 
 ---
 
@@ -302,7 +337,7 @@ theme=cccon-end
 
 <img src="./community-summit-logo-black.svg" style="height: 4em; display: block; margin-bottom: calc(var(--block-margin) * 8)" />
 
-## Thank you. Questions?
+## Thank you. <span style="color: #ff5500">Questions?</span>
 
 ---
 
