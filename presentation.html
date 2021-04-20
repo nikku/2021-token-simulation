@@ -362,6 +362,11 @@ transform: translate(0, 0);
       <section class="slide" data-theme="cccon" data-align="left"><!--config
 theme=cccon
 --><style>
+
+  :root {
+    --color-camunda-red: #ff3000;
+  }
+
   .slide:not([data-theme]):before,
   .slide[data-theme='cccon-end']:before {
     content: '';
@@ -369,8 +374,14 @@ theme=cccon
     left: 0;
     top: 0;
     right: 0;
-    background: #ff3000;
+    background: var(--color-camunda-red);
     height: .2em;
+  }
+
+  ref {
+    display: block;
+    font-size: .5em;
+    margin-top: 2em;
   }
 
   .slide[data-theme='cccon'] {
@@ -389,7 +400,7 @@ theme=cccon
   }
 
   .slide[data-theme='eco'] {
-    --color-highlight-bg: #ff3000;
+    --color-highlight-bg: var(--color-camunda-red);
   }
 </style><img src="./community-summit-logo-white.svg" style="height: 4em; display: block;" />
         <h2>Making of bpmn-js Token Simulation</h2>
@@ -455,7 +466,7 @@ theme=eco
           <li>Embeds into any web page</li>
           <li>Extensible by design</li>
         </ul>
-        <p><small style="margin-top: 2em; display: block">➡️ <a href="https://github.com/bpmn-io/bpmn-js" target="_blank" rel="nofollow noopener noreferrer"><code>https://github.com/bpmn-io/bpmn-js</code></a></small></p>
+        <p><ref><a href="https://github.com/bpmn-io/bpmn-js" target="_blank" rel="nofollow noopener noreferrer"><code>https://github.com/bpmn-io/bpmn-js</code></a></ref></p>
       </section>
       <section class="slide" data-align="center"><img src="./application-processing.svg" title="Huge diagram" width="85%"></section>
       <section class="slide" data-align="center">
@@ -510,6 +521,17 @@ selection.select([
 </code></pre>
       </section>
       <section class="slide" data-align="left">
+        <h2>📙 Hook into Events</h2>
+        <pre><code class="language-javascript">const bpmnModeler = new BpmnModeler();
+
+const eventBus = bpmnModeler.get('eventBus');
+
+eventBus.on('element.changed', function(event) {
+  console.log('Changed', event.element);
+});
+</code></pre>
+      </section>
+      <section class="slide" data-align="left">
         <h2>📙 Model Programmatically</h2>
         <pre><code class="language-javascript">const modeling = bpmnModeler.get('modeling');
 
@@ -518,6 +540,13 @@ modeling.createShape(
   { x: 10, y: 20 }
 );
 </code></pre>
+      </section>
+      <section class="slide" data-align="center"><a style="height: 70%; display: block;" href="https://bpmn.io/blog/posts/2021-wasdenn-ai-modeling-assistant.html">
+  <img src="./002_wasdenn-2.gif" alt="002_wasdenn-2.gif" style="height: 100%;
+    border: solid 4px #F0F0F0;
+    border-radius: 4px;">
+</a>
+        <p><ref><a href="https://bpmn.io/blog/posts/2021-wasdenn-ai-modeling-assistant.html" target="_blank" rel="nofollow noopener noreferrer"><code>https://bpmn.io/blog/posts/2021-wasdenn-ai-modeling-assistant.html</code></a></ref></p>
       </section>
       <section class="slide" data-align="left">
         <h2>📘 Implement a Service</h2>
@@ -592,7 +621,7 @@ theme=cccon-end
     margin-top: var(--block-margin);
   }
 </style><img src="./community-summit-logo-black.svg" style="height: 4em; display: block; margin-bottom: calc(var(--block-margin) * 8)" />
-        <h2>Thank you. Questions?</h2>
+        <h2>Thank you. <span style="color: #ff5500">Questions?</span></h2>
       </section>
       <section class="slide" data-align="left">
         <h2>Resources</h2>
