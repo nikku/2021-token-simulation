@@ -185,7 +185,8 @@ theme=eco
 
 * Named services offer behavior
 * Modules group services into logical units
-* Instantiation and discovery via [dependency injection](https://en.wikipedia.org/wiki/Dependency_injection)
+* Service instantiation library managed
+* [Dependency injection](https://en.wikipedia.org/wiki/Dependency_injection) / [IoC](https://en.wikipedia.org/wiki/Inversion_of_control) at the core
 
 ---
 
