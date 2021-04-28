@@ -316,6 +316,7 @@ theme=eco
 
 ## In a Nutshell
 
+* Uses bpmn-js extensible architecture
 * Visualizations on top of the actual BPMN diagram
 * Accounts for _editor_ or _viewer_
 * Custom controls to interact with the simulator
@@ -343,6 +344,16 @@ theme=cccon-end
 <img src="./community-summit-logo-black.svg" style="height: 4em; display: block; margin-bottom: calc(var(--block-margin) * 8)" />
 
 ## Thank you. <span style="color: #ff5500">Questions?</span>
+
+---
+
+<!--config
+theme=eco
+-->
+
+## Contribute to Token Simulation
+
+#### You like the token simulation tool? Consider contributing [on Github](https://github.com/bpmn-io/bpmn-js-token-simulation) and help us to make it even better :heart:.
 
 ---
 
