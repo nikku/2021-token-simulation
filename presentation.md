@@ -183,7 +183,7 @@ theme=eco
 
 ## An Extensible Architecture
 
-* Named Services offer behavior
+* Named services offer behavior
 * Modules group services into logical units
 * Instantiation and discovery via [dependency injection](https://en.wikipedia.org/wiki/Dependency_injection)
 
