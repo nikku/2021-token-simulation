@@ -1,6 +1,6 @@
 # Making of Token Simulation
 
-Slides of my bpmn.io talk at the [Camunda Community Summit 2021](https://summit.camunda.com).
+Slides of my bpmn.io talk at the [Camunda Community Summit 2021](https://summit.camunda.com). [__Watch the ⏺️ Recording__](https://player.vimeo.com/video/543362859).
 
 [![Slides](./screenshot.png)](https://cdn.statically.io/gh/nikku/2021-token-simulation/v0.0.5/presentation.html)
 
